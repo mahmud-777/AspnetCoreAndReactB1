@@ -14,12 +14,29 @@ namespace WebApiApp
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            IWebHost webHost = BuildWebHost(args);
+
+            webHost.Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+        public static IWebHost BuildWebHost(string[] args)
+        {
+
+            IWebHostBuilder webHostBuilder = WebHost
+
+            .CreateDefaultBuilder(args)
+            .ConfigureLogging(
+            (context, builder) =>
+                {
+
+                    builder.AddFile("C:/Temp/Logs/log-{Date}.txt");
+                })
+
+            .UseStartup<Startup>();
+
+             
+            return webHostBuilder.Build();
+
+        }
     }
 }
