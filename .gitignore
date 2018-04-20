@@ -6,3 +6,6 @@
 /samples/EmptyApp/.vs/config
 /samples/EmptyApp/EmptyApp/bin/Debug/netcoreapp2.0
 /samples/EmptyApp/EmptyApp/obj
+/samples/WebApiApp/WebApiApp/obj
+/samples/WebApiApp/WebApiApp/bin/Debug/netcoreapp2.0
+/samples/WebApiApp/.vs
