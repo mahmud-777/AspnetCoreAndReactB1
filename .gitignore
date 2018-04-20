@@ -12,3 +12,16 @@
 /samples/MvcApp/MvcApp/obj
 /samples/MvcApp/MvcApp/bin/Debug/netcoreapp2.0
 /samples/MvcApp/.vs
+/lms/LmsApp/.vs/LmsApp/v15
+/lms/LmsApp/LmsApp.Server/bin/Debug/netcoreapp2.0
+/lms/LmsApp/LmsApp.Server/obj
+/lms/LmsApp/Model/bin/Debug/netcoreapp2.0
+/lms/LmsApp/Model/obj
+/lms/LmsApp/Repository/bin/Debug/netcoreapp2.0
+/lms/LmsApp/Repository/obj
+/lms/LmsApp/RequestModel/bin/Debug/netcoreapp2.0
+/lms/LmsApp/RequestModel/obj
+/lms/LmsApp/Service/bin/Debug/netcoreapp2.0
+/lms/LmsApp/Service/obj
+/lms/LmsApp/ViewModel/bin/Debug/netcoreapp2.0
+/lms/LmsApp/ViewModel/obj
