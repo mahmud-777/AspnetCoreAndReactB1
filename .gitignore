@@ -30,3 +30,12 @@
 /rms/RMSApp/.vs/RMSApp/v15/Server/sqlite3
 /rms/RMSApp/RMSApp.Server/bin/Debug/netcoreapp2.0
 /rms/RMSApp/RMSApp.Server/obj
+/rms/RMSApp/.vs/RMSApp/v15
+/rms/RMSApp/Common/bin/Debug/netcoreapp2.0
+/rms/RMSApp/Common/obj
+/rms/RMSApp/Model/bin/Debug/netcoreapp2.0
+/rms/RMSApp/Model/obj
+/rms/RMSApp/Repository/bin/Debug/netcoreapp2.0
+/rms/RMSApp/Repository/obj
+/rms/RMSApp/Service/bin/Debug/netcoreapp2.0
+/rms/RMSApp/Service/obj
