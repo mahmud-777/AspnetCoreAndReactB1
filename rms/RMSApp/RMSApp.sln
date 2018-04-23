@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMSApp.Server", "RMSApp.Server\RMSApp.Server.csproj", "{CA3F9777-0303-4588-BF7B-36FBEBF426E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Server", "01 Server", "{FCEC4FD5-353A-4F17-80AA-1D0D75A68832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Service", "02 Service", "{7539B77B-8785-4895-8EC0-0DCB15FB4B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Repository", "03 Repository", "{3BB6FFD1-76F5-4E82-9F9D-389E859BCC5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Model", "04 Model", "{39AE759B-DFAE-46D4-869D-E05E6FFE56F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Common", "05 Common", "{D35E430E-8608-4D5F-8100-750E7005BFFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Utility", "06 Utility", "{F276889F-657B-4337-9215-90F9D0782CCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA3F9777-0303-4588-BF7B-36FBEBF426E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3F9777-0303-4588-BF7B-36FBEBF426E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3F9777-0303-4588-BF7B-36FBEBF426E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3F9777-0303-4588-BF7B-36FBEBF426E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA3F9777-0303-4588-BF7B-36FBEBF426E0} = {FCEC4FD5-353A-4F17-80AA-1D0D75A68832}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {819C6849-0B58-4125-8F58-D00131B1E6D5}
+	EndGlobalSection
+EndGlobal
