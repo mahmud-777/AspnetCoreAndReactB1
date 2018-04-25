@@ -39,3 +39,9 @@
 /rms/RMSApp/Repository/obj
 /rms/RMSApp/Service/bin/Debug/netcoreapp2.0
 /rms/RMSApp/Service/obj
+/LmsReact/LmsReactApp/.vs
+/LmsReact/LmsReactApp/LmsReactApp.Server/bin/Debug/netcoreapp2.0
+/LmsReact/LmsReactApp/LmsReactApp.Server/obj
+/LmsReact/LmsReactApp/Model/obj
+/LmsReact/LmsReactApp/Repository/obj
+/LmsReact/LmsReactApp/Service/obj
