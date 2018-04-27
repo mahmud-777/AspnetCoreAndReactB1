@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Model;
 using Model.Repo;
+using Service;
 
 namespace LmsReactApp.Server
 {
@@ -29,6 +30,7 @@ namespace LmsReactApp.Server
             services.AddDbContext<LmsDbContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("LmsDbContext")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericService<,,>), typeof(GenericService<,,>));
 
             services.AddMvc();
         }
