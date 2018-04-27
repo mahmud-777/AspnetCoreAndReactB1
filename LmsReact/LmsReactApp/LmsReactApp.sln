@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LmsReactApp.Server", "LmsReactApp.Server\LmsReactApp.Server.csproj", "{3181668D-9458-4559-B168-73FA8DE106B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LmsReactApp.Server", "LmsReactApp.Server\LmsReactApp.Server.csproj", "{3181668D-9458-4559-B168-73FA8DE106B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Server", "01 Server", "{94F13DD9-7A8B-4416-8B52-B5305C1BB87D}"
 EndProject
@@ -17,11 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Common", "05 Common", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Utility", "06 Utility", "{148DBC45-563E-4408-8AD7-58B76F52B750}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{2629FC90-51F7-4058-96FF-B9E694C3B116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{2629FC90-51F7-4058-96FF-B9E694C3B116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{4FB2EC97-5EC2-4FC8-A85E-7C79E8CFF57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{4FB2EC97-5EC2-4FC8-A85E-7C79E8CFF57A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestModel", "RequestModel\RequestModel.csproj", "{0B3ACF11-52CD-4139-8EE2-0D040D66875A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{A55926C6-019F-4D60-B6F9-C638D9844C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3ACF11-52CD-4139-8EE2-0D040D66875A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3ACF11-52CD-4139-8EE2-0D040D66875A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3ACF11-52CD-4139-8EE2-0D040D66875A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3ACF11-52CD-4139-8EE2-0D040D66875A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55926C6-019F-4D60-B6F9-C638D9844C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55926C6-019F-4D60-B6F9-C638D9844C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55926C6-019F-4D60-B6F9-C638D9844C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55926C6-019F-4D60-B6F9-C638D9844C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +66,8 @@ Global
 		{2629FC90-51F7-4058-96FF-B9E694C3B116} = {9A11A530-07D0-4F7E-A3C7-A459ECD6A848}
 		{4FB2EC97-5EC2-4FC8-A85E-7C79E8CFF57A} = {B1F51774-1AD6-4743-917B-B98B42D9583B}
 		{80FF6610-79AF-4C67-A3EB-07FFD9AA7BAE} = {B09DFABB-5D91-41AA-872A-9496C297ADD5}
+		{0B3ACF11-52CD-4139-8EE2-0D040D66875A} = {9A11A530-07D0-4F7E-A3C7-A459ECD6A848}
+		{A55926C6-019F-4D60-B6F9-C638D9844C52} = {9A11A530-07D0-4F7E-A3C7-A459ECD6A848}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D9CE0C4-5501-4062-AA47-00AD5E32523A}

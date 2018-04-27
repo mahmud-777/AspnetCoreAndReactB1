@@ -48,3 +48,5 @@
 /LmsReact/LmsReactApp/Model/bin/Debug/netcoreapp2.0
 /LmsReact/LmsReactApp/Repository/bin/Debug/netcoreapp2.0
 /LmsReact/LmsReactApp/Service/bin/Debug/netcoreapp2.0
+/LmsReact/LmsReactApp/RequestModel/obj
+/LmsReact/LmsReactApp/ViewModel/obj
