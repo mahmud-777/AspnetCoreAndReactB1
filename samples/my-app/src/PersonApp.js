@@ -17,7 +17,7 @@ class PersonApp extends Component {
                 <h1 className="App-title">WelcomeReact</h1>
             </header>
 
-           
+           <PersonInput/>
 
             <PersonList/>
 

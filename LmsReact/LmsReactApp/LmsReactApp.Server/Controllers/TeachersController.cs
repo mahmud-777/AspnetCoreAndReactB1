@@ -30,5 +30,25 @@ namespace LmsReactApp.Server.Controllers
             var items = await _service.SearchAsync(request);
             return Ok(items);
         }
+
+        [HttpPost]
+        [Route("Add")]
+        public IActionResult AddTeacher([FromBody] Teacher teacher)
+        {
+            teacher.Id = Guid.NewGuid().ToString();
+            teacher.Modified = DateTime.Now;
+            teacher.Created = DateTime.Now;
+            teacher.CreatedBy = "System";
+            teacher.ModifiedBy = "System";
+            teacher.IsActive = true;
+            teacher.IsDeleted = false;
+
+
+
+            bool add =  _service.Add(teacher);
+            return Ok(teacher.Id);
+        }
+
+
     }
 }
