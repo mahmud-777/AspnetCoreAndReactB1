@@ -13,6 +13,6 @@ namespace WebApiApp.Models
 
         public string Code { get; set; }
 
-        public virtual ICollection<Student> Student { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

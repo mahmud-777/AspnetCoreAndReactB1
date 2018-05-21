@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +28,8 @@ namespace WebApiApp
         {
             string ConnectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options => { options.UseSqlServer(ConnectionString); });
+
+            services.AddCors();
             services.AddMvc();
         }
 
@@ -38,7 +41,11 @@ namespace WebApiApp
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod());
+
             app.UseMvc();
+
+            app.Run(x => x.Response.WriteAsync("hello world " + DateTime.Now));
         }
     }
 }

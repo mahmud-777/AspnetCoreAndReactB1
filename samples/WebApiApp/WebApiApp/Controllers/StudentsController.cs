@@ -44,7 +44,8 @@ namespace WebApiApp.Controllers
 
             if (orderBy == "Name")
             {
-                dbStudents = isAscending ? dbStudents.OrderBy(x => x.Name).AsQueryable() : dbStudents.OrderByDescending(x => x.Name).AsQueryable();
+                dbStudents =
+                    isAscending ? dbStudents.OrderBy(x => x.Name).AsQueryable() : dbStudents.OrderByDescending(x => x.Name).AsQueryable();
             }
 
             if (orderBy == "Phone")

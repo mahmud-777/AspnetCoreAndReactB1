@@ -32,6 +32,8 @@ class PersoInput extends Component{
     render(){
 
         return(
+
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Person Name:<input type="text" name="name" onChange={this.handleChange }/>
@@ -44,6 +46,8 @@ class PersoInput extends Component{
                     <li key={person.id}>{person.name}</li>
                 )}
             </ul>
+
+            </div>
         );
     }
 }
