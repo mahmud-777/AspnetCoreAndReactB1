@@ -13,5 +13,10 @@ namespace Model
         public string Courses { get; set; }
 
         public int TotalCredit { get; set; }
+
+        //public string DepartmentId { get; set; }
+
+        //[ForeignKey("DepartmentId")]
+        //public virtual Department Department { get; set; }
     }
 }
