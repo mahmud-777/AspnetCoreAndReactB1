@@ -41,17 +41,20 @@ export default class Main extends Component {
         ];
 
         return (
-            <div>
-                <h2>Main</h2>
-                {/* <Route path="/" exact="true" component={Home}/>
-                <Route path="/student-list" exact="true" component={Students}/>
-                <Route path="/student-list" exact="true" component={StudentDetail}/> */}
+            <div class="container-fluid">
+                {/* <h2>Main</h2> */}
+                <div class="side-body">
+                     {/* <Route path="/" exact="true" component={Home}/>
+                     <Route path="/student-list" exact="true" component={Students}/>
+                     <Route path="/student-list" exact="true" component={StudentDetail}/> */}
 
-                {
-                    routes.map((route,index)=>(
-                        <Route path={route.path} exact={route.exact} component={route.main}/>
-                    ))
-                }
+                    {
+                        routes.map((route,index)=>(
+                            <Route path={route.path} exact={route.exact} component={route.main}/>
+                        ))
+                    }
+                </div>
+               
 
 
             </div>

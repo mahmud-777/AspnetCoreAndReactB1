@@ -8,8 +8,8 @@ export default class MyApp extends Component {
     render() {
         return (
             <Router>
-            <div>
-                <h2>MyApp</h2>
+            <div class='row'>
+                {/* <h2>MyApp</h2> */}
                 
                     <Sidebar/>
                     <Main/>

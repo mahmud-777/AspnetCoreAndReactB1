@@ -26,18 +26,25 @@ export default class Sidebar extends Component {
         ];
         return (
             
-            <div>
-                <h2>sidebar</h2>
-                <ul>
-                    {/* <li><Link to="/">Home</Link></li>
-                    <li><Link to="/student-list">Student</Link></li> */}
+            <div class="side-menu">
 
-                    {
-                        menus.map((x)=>
-                        <li><Link to={x.to}>{x.text}</Link></li>)
-                    }
-                    
-                </ul>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+                        {/* <li><Link to="/">Home</Link></li>
+                        <li><Link to="/student-list">Student</Link></li> */}
+
+                        {
+                            menus.map((x)=>
+                            <li><Link to={x.to}>{x.text}</Link></li>)
+                        }
+                        
+                    </ul>
+                </div>
+            
+            </nav>
+                
+                
                 <hr/>
                
 

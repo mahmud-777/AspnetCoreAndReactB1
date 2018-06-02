@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import { BrowserRouter as Router,Link,Route} from "react-router-dom";
+
 export default class StudentDetail extends Component {
 
     componentDidMount(){
@@ -22,6 +24,8 @@ export default class StudentDetail extends Component {
         return (
             <div>
                 <h2>i StudentDetail{p.match.params.id}</h2>
+
+                <h3><Link to="/student-list">Students</Link></h3>
             </div>
         )
     }
