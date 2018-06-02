@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import HttpService from '../Services/HttpService';
 
+import {BrowserRouter as Router,Link,Route } from 'react-router-dom';
+import Student from './Student';
 export default class StudentList extends Component {
     constructor(){
         super();
@@ -29,6 +31,7 @@ export default class StudentList extends Component {
                 <div>
                     <table>
                         <th>
+                            <td>Id</td>
                             <td>Name</td>
                             <td>Phone</td>
                             <td>Modified</td>
@@ -39,6 +42,13 @@ export default class StudentList extends Component {
 
                                 //console.log(s);
                                 <tr>
+                                    <td>
+                                        <Link to={'/student-list/'+s.id}>
+                                        {s.id}
+                                        </Link>
+                                        {s.id}
+
+                                    </td>
                                     <td>{s.name}</td>
                                     <td>{s.phone}</td>
                                     <td>{new Date(s.modified).toDateString()}</td>
@@ -46,6 +56,17 @@ export default class StudentList extends Component {
                             )
                         }
                     </table>
+                </div>
+                <hr/>
+                <div>
+                    <h3>hello guys!</h3>
+                        {this.state.students.map((s,index)=>(
+                            <Route exact key={index}
+                            path='/student-list/:{s.id}' component={Student}/>
+                        ))}
+                    
+                    
+                      
                 </div>
             </div>
         )
