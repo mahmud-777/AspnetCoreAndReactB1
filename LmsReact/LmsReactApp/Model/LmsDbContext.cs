@@ -15,6 +15,8 @@ namespace Model
 
         public DbSet<Teacher> Teachers { get; set; }
 
+        public DbSet<Department> Departments { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Course>().HasIndex(x => x.Name);

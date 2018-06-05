@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Model
@@ -14,9 +15,9 @@ namespace Model
 
         public int TotalCredit { get; set; }
 
-        //public string DepartmentId { get; set; }
+        public string DepartmentId { get; set; }
 
-        //[ForeignKey("DepartmentId")]
-        //public virtual Department Department { get; set; }
+        [ForeignKey("DepartmentId")]
+        public virtual Department Department { get; set; }
     }
 }
