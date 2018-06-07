@@ -13,47 +13,47 @@ namespace LmsReactApp.Server.Controllers
 {
     [Produces("application/json")]
     [Route("api/Courses")]
-    public class CoursesController : Controller
+    public class CoursesController : BaseController<Course,CourseRequestModel,CourseViewModel>
     {
-        private GenericService<Course, CourseRequestModel, CourseViewModel> _service;
+        //private GenericService<Course, CourseRequestModel, CourseViewModel> _service;
 
-        public CoursesController(IGenericService<Course, CourseRequestModel, CourseViewModel> service)
+        public CoursesController(IGenericService<Course, CourseRequestModel, CourseViewModel> service):base(service)
         {
-            _service = service as GenericService<Course, CourseRequestModel, CourseViewModel>;
+           // _service = service as GenericService<Course, CourseRequestModel, CourseViewModel>;
         }
 
-        [HttpPost]
-        [Route("Search")]
-        public async Task<IActionResult> GetCourses([FromBody] CourseRequestModel request)
-        {
-            var courses = await _service.SearchAsync(request);
-            return Ok(courses);
-        }
+        //[HttpPost]
+        //[Route("Search")]
+        //public async Task<IActionResult> GetCourses([FromBody] CourseRequestModel request)
+        //{
+        //    var courses = await _service.SearchAsync(request);
+        //    return Ok(courses);
+        //}
 
-        [HttpPost]
-        [Route("Add")]
-        public IActionResult AddCourse([FromBody] Course course)
-        {
-            course.Id = Guid.NewGuid().ToString();
-            course.Created = DateTime.Now;
-            course.Modified = DateTime.Now;
-            course.CreatedBy = "system";
-            course.ModifiedBy = "system";
-            course.IsActive = true;
+        //[HttpPost]
+        //[Route("Add")]
+        //public IActionResult AddCourse([FromBody] Course course)
+        //{
+        //    course.Id = Guid.NewGuid().ToString();
+        //    course.Created = DateTime.Now;
+        //    course.Modified = DateTime.Now;
+        //    course.CreatedBy = "system";
+        //    course.ModifiedBy = "system";
+        //    course.IsActive = true;
 
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            bool added = _service.Add(course);
-            if (added)
-            {
-                return Ok(course.Id);
-            }
+        //    bool added = _service.Add(course);
+        //    if (added)
+        //    {
+        //        return Ok(course.Id);
+        //    }
 
-            return BadRequest("Couldn't save course.");
-        }
+        //    return BadRequest("Couldn't save course.");
+        //}
 
     }
 }
