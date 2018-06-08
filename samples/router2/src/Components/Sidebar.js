@@ -18,10 +18,26 @@ export default class Sidebar extends Component {
 
         let menus=[
             {
-                to:'/',text:'Home'
+                to:'/',
+                text:'Home'
             },
             {
-                to:'/student-list',text:'Students'
+                to:'/department-list',
+                text:'Departments'
+            },
+            {
+                to:'/course-list',
+                text:'Courses'
+            },
+
+
+            {
+                to:'/student-list',
+                text:'Students'
+            },
+            {
+                to:'/teacher-list',
+                text:'Teachers'
             }
         ];
         return (

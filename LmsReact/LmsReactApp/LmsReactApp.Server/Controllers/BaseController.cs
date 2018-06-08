@@ -53,5 +53,15 @@ namespace LmsReactApp.Server.Controllers
 
             return BadRequest("Couldn't save model.");
         }
+
+        [HttpGet]
+        [Route("GetDetail")]
+        public IActionResult GetDetail(string id)
+        {
+          var detail= this._service.GetDetail(id);
+            return this.Ok(detail);
+
+        }
+
     }
 }
